@@ -13,7 +13,7 @@ should_quit = False
 
 #gsp_tree.gsp_tree_destroy_node(root1)
 #
-
+'''
 view1 = gsp_view.gsp_view_create_view()
 view2 = gsp_view.gsp_view_create_view()
 
@@ -27,6 +27,7 @@ background.alpha = 1.0
 
 gsp_view.gsp_view_set_background_color(view1, background)
 gsp_view.gsp_view_set_window_root(window1, view1)
+'''
 
 
 def callback(window, event):
@@ -39,7 +40,7 @@ callback_handle = gsp_window.EVENT_CALLBACK_TYPE(callback)
 gsp_window.gsp_window_set_title(window1, "hello from python")
 gsp_window.gsp_window_set_event_callback(window1, callback_handle)
 
-view1 = gsp_view.gsp_view_create_view()
+#view1 = gsp_view.gsp_view_create_view()
 
 while should_quit == False:
     print(f"should quit {should_quit}")
